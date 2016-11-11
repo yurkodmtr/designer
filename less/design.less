@@ -1,0 +1,58 @@
+@import "elements.less";
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+.oswald {
+	font-family: 'Oswald', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+.roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {	
+	*:focus {
+		outline:none;
+	}
+}
+
+.reveal {
+	
+	.center {
+
+	}
+	
+	.slides {
+		text-align:left;
+	}
+	.title {
+		font-size:90px; 
+		margin-bottom:30px;
+		.oswald;
+	}	 
+	.p {
+		color:#777777;
+		font-size:36px;
+		line-height:48px;
+		.roboto; 
+		font-weight:100;
+	}
+
+	/* color */
+	.white {
+		color:#FFF;
+	}
+	.grey {
+		color:#a8a8a8;
+	}
+}
+
+
+
+.clearfix:after {
+	content:'';
+	display:block;
+	clear:both;
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+body *:focus {
+  outline: none;
+}
+.reveal {
+  /* color */
+
+}
+.reveal .slides {
+  text-align: left;
+}
+.reveal .title {
+  font-size: 90px;
+  margin-bottom: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+.reveal .p {
+  color: #777777;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+.reveal .white {
+  color: #FFF;
+}
+.reveal .grey {
+  color: #a8a8a8;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}

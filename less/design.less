@@ -18,10 +18,33 @@ body {
 	}
 }
 
+/* nav */
+.nav {
+	position:fixed;
+	z-index:10;
+	right:50px;
+	top:50px;
+	white-space:nowrap;
+	a {
+		text-decoration:none;
+		.roboto;
+		font-weight:100;
+		color:#FFF;
+		text-transform:uppercase;
+		display:inline-block;
+		margin-right:30px;
+		&:last-child {
+			margin-right:0px;
+		}
+		white-space:nowrap;
+	}
+}
+
 .reveal {
 	
 	.center {
-
+		width:1200px;
+		margin:0 auto; 
 	}
 	
 	.slides {

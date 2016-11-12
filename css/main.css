@@ -13,44 +13,84 @@
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  -moz-transform: scale(1, 1) !important;
+  /* Moz-browsers */
+
+  zoom: 1!important;
+  /* Other non-webkit browsers */
+
+  zoom: 100%!important;
+  /* Webkit browsers */
+
+}
 body *:focus {
   outline: none;
 }
-/* nav */
-.nav {
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* header */
+.header {
   position: fixed;
   z-index: 10;
-  right: 50px;
-  top: 50px;
+  padding: 50px 50px 0px 50px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* nav */
+.header .nav {
+  float: right;
   white-space: nowrap;
 }
-.nav a {
+.header .nav a {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  color: #FFF;
+  color: #222222;
   text-transform: uppercase;
   display: inline-block;
   margin-right: 30px;
   white-space: nowrap;
 }
-.nav a:last-child {
+.header .nav a:last-child {
   margin-right: 0px;
 }
 .reveal {
+  /* page_2 */
+
   /* color */
 
 }
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 0px;
+}
 .reveal .center {
-  width: 1200px;
+  padding: 8.59375% 18.75%;
+  /* 165 1200 */
+  /* 360 1920 */
+
   margin: 0 auto;
+  max-width: 100%;
 }
 .reveal .slides {
   text-align: left;
 }
 .reveal .title {
   font-size: 90px;
-  margin-bottom: 30px;
+  margin-bottom: 49px;
   font-family: 'Oswald', sans-serif;
 }
 .reveal .p {
@@ -59,6 +99,23 @@ body *:focus {
   line-height: 48px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+}
+.reveal .p__size_570 {
+  width: 47.5%;
+  /* 570 1200 */
+
+}
+.reveal .page_2 .page_2_img {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  /*width:43.75%; /* 840 1920 */
+
 }
 .reveal .white {
   color: #FFF;

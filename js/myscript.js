@@ -1,5 +1,6 @@
 "use strict";
 
+/* add class to nav */
 var navClass = function(){
 	var pageCount = $('.slides > section > section').length;
 	var clearClass = function(){
@@ -17,6 +18,19 @@ var navClass = function(){
 		}
 	}
 	setNavClass();	
+}
+
+/* set anchors */
+var navAnchors = function(){
+	$('.nav a:nth-child(1)').click(function(){
+		Reveal.slide( 1 );
+	});
+	$('.nav a:nth-child(2)').click(function(){
+		Reveal.slide( 1 );
+	});
+	$('.nav a:nth-child(3)').click(function(){
+		Reveal.slide( 1 );
+	});
 }
 
 $(window).load(function(){

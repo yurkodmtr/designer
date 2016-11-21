@@ -21,10 +21,20 @@ var navFix = function(){
 	});
 }
 
+var sliderParallax = function(){
+	$('.owl-next').click(function(){
+		var el = $('.reveal .home__projects .slide .table-cell:first-child img');
+		el.addClass( "act" ).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){
+            el.removeClass( "act" );
+        });
+	});
+}
+
 
 $(window).load(function(){
 	slideChange();
 	navFix();
+	sliderParallax();
 
 	Reveal.addEventListener( 'slidechanged', function( event ) {
 		slideChange();

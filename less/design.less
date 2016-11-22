@@ -101,7 +101,13 @@ body {
 				.oswald;
 				color:#222222;
 				font-size:24px;
+				.transition(0.2s);
+				.opacity(1);
 				text-transform:uppercase;
+				&.disabled {
+					cursor:default;
+					.opacity(0.7);
+				}
 			}
 			.owl-prev {
 				float:left;
@@ -109,6 +115,7 @@ body {
 			.owl-next {
 				float:right;
 			}
+
 		}
 		.owl-pagination {
 			.owl-page {

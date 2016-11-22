@@ -40,11 +40,6 @@
 </head>
 <body>
 
-	
-		
-		
-
-
 
 	<div class="reveal">
 
@@ -78,6 +73,7 @@
  
 					<div class="item">
 						<div class="slide">
+							<div class="center_point"></div>
 							<span class="count">
 								01
 							</span>
@@ -240,14 +236,17 @@
 			height:'1080'
 	 	});
 
-	 	$("#owl-demo").owlCarousel({ 
-		      navigation : true, // Show next and prev buttons
-		      slideSpeed : 2000,
-		      paginationSpeed : 2000,
-		      singleItem:true,
-		      mouseDrag: false,
-		      addClassActive : true		 
-		  });
+ 		var owl = $('#owl-demo');
+ 		owl.owlCarousel({ 
+	      	navigation : true, // Show next and prev buttons
+	      	slideSpeed : 2000,
+	      	paginationSpeed : 2000,
+	      	singleItem:true,
+	      	mouseDrag: false,
+	      	addClassActive : false,
+	      	rewindNav : false	 
+	  	});
+
 	});
  	
 

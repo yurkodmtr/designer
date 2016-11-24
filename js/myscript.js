@@ -6,7 +6,6 @@ var slideChange = function(){
 	} else {
 		$('.home__about__img').fadeOut();
 	}
-
 }
 
 var navFix = function(){
@@ -29,6 +28,17 @@ var sliderParallaxOnload = function(){
 	}
 }
 
+var breakpoint = function(){
+	var w = $(window).width();
+	if ( w <=768 ) {
+		$('body').addClass('device');
+		Reveal.configure({ width: '768' });
+	} else {
+		$('body').removeClass('device');
+		Reveal.configure({ width: '1920' });
+	}
+}
+
 $(document).ready(function(){
 	$('.owl-item').removeClass('active');
 });
@@ -37,10 +47,15 @@ $(window).load(function(){
 	slideChange();
 	navFix();
 	sliderParallaxOnload();
+	breakpoint();
 
 	Reveal.addEventListener( 'slidechanged', function( event ) {
 		slideChange();
 		sliderParallaxOnload();
 	});
 	
+});
+
+$(window).resize(function(){
+	breakpoint();
 });

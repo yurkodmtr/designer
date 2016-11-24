@@ -39,6 +39,18 @@ var breakpoint = function(){
 	}
 }
 
+var contactText = function(){
+	$('.home__contact input, .home__contact .textarea').focus(function(){
+		$(this).parent().addClass('act');
+	});	
+	$('.home__contact input, .home__contact .textarea').focusout(function(){
+		if ( $(this).val().length == 0 ) {
+			$(this).parent().removeClass('act');
+		}
+		
+	});	
+}
+
 $(document).ready(function(){
 	$('.owl-item').removeClass('active');
 });
@@ -47,7 +59,8 @@ $(window).load(function(){
 	slideChange();
 	navFix();
 	sliderParallaxOnload();
-	breakpoint();
+	//breakpoint();
+	contactText();
 
 	Reveal.addEventListener( 'slidechanged', function( event ) {
 		slideChange();
@@ -57,5 +70,5 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-	breakpoint();
+	//breakpoint();
 });

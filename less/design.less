@@ -204,27 +204,7 @@ body {
 								.transition(0.2s);
 								left:0px;
 								&:hover {
-									.title {
-										-webkit-transform: translate3d(15px, 0, 0);
-									     -moz-transform: translate3d(15px, 0, 0);
-									      -ms-transform: translate3d(15px, 0, 0);
-									       -o-transform: translate3d(15px, 0, 0);
-									          transform: translate3d(15px, 0, 0);
-									}
-									.p {
-										-webkit-transform: translate3d(15px, 0, 0);
-									     -moz-transform: translate3d(15px, 0, 0);
-									      -ms-transform: translate3d(15px, 0, 0);
-									       -o-transform: translate3d(15px, 0, 0);
-									          transform: translate3d(15px, 0, 0);
-									}
-									.arrow {
-										-webkit-transform: translate3d(15px, 0, 0);
-									     -moz-transform: translate3d(15px, 0, 0);
-									      -ms-transform: translate3d(15px, 0, 0);
-									       -o-transform: translate3d(15px, 0, 0);
-									          transform: translate3d(15px, 0, 0);
-									}
+									left:15px;
 								}
 							}
 							.title {
@@ -372,6 +352,12 @@ body {
 				.roboto;
 				font-weight:100;
 				cursor:pointer;
+				.transition(0.4s);
+				border:1px solid #FFF;
+				&:hover {
+					background:transparent;
+					color:#FFF;
+				}
 			}
 		}
 		.row {

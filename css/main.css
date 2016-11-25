@@ -256,26 +256,8 @@ body * {
   transition: all 0.2s ease-out;
   left: 0px;
 }
-.reveal .home__projects .owl-item .slide .table-cell:last-child a:hover .title {
-  -webkit-transform: translate3d(15px, 0, 0);
-  -moz-transform: translate3d(15px, 0, 0);
-  -ms-transform: translate3d(15px, 0, 0);
-  -o-transform: translate3d(15px, 0, 0);
-  transform: translate3d(15px, 0, 0);
-}
-.reveal .home__projects .owl-item .slide .table-cell:last-child a:hover .p {
-  -webkit-transform: translate3d(15px, 0, 0);
-  -moz-transform: translate3d(15px, 0, 0);
-  -ms-transform: translate3d(15px, 0, 0);
-  -o-transform: translate3d(15px, 0, 0);
-  transform: translate3d(15px, 0, 0);
-}
-.reveal .home__projects .owl-item .slide .table-cell:last-child a:hover .arrow {
-  -webkit-transform: translate3d(15px, 0, 0);
-  -moz-transform: translate3d(15px, 0, 0);
-  -ms-transform: translate3d(15px, 0, 0);
-  -o-transform: translate3d(15px, 0, 0);
-  transform: translate3d(15px, 0, 0);
+.reveal .home__projects .owl-item .slide .table-cell:last-child a:hover {
+  left: 15px;
 }
 .reveal .home__projects .owl-item .slide .table-cell:last-child .title {
   -webkit-transition: all 2s ease-out;
@@ -411,6 +393,15 @@ body * {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   cursor: pointer;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  border: 1px solid #FFF;
+}
+.home__contact .wrap form .submit:hover {
+  background: transparent;
+  color: #FFF;
 }
 .home__contact .wrap .row {
   margin-bottom: 50px;

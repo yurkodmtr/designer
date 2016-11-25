@@ -30,12 +30,24 @@ var sliderParallaxOnload = function(){
 
 var breakpoint = function(){
 	var w = $(window).width();
-	if ( w <=768 ) {
+	if ( w <=768 && w>=321) {
 		$('body').addClass('device');
-		Reveal.configure({ width: '768' });
+		Reveal.configure({ 
+			width: '620',
+			height: '1024'
+		});
+	} else if ( w <=320) {
+		$('body').addClass('device');
+		Reveal.configure({ 
+			width: '290',
+			height: '1024'
+		});
 	} else {
 		$('body').removeClass('device');
-		Reveal.configure({ width: '1920' });
+		Reveal.configure({ 
+			width: '1920',
+			height:'1080'
+		});
 	}
 }
 
@@ -59,7 +71,7 @@ $(window).load(function(){
 	slideChange();
 	navFix();
 	sliderParallaxOnload();
-	//breakpoint();
+	breakpoint();
 	contactText();
 
 	Reveal.addEventListener( 'slidechanged', function( event ) {
@@ -70,5 +82,5 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-	//breakpoint();
+	breakpoint();
 });

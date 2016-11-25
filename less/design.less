@@ -305,6 +305,27 @@ body {
 		}
 	}
 }
+.device {
+	.reveal {
+		.home__about {
+			.wrap {
+				.qqq {
+					text-align:left;
+					width:54.83870967741935%; /* 340 620 */
+				}			
+			}
+			&__img {
+				display:none;
+				position:fixed;
+				left:40%;
+				max-width:900px; /* 713 1920 */
+				width:auto;
+				max-height:100%;
+				bottom:0px;
+			}
+		}
+	}
+}
 
 /* home__contact */
 .home__contact {
@@ -434,6 +455,85 @@ body {
 		}
 	}
 }
+.device {
+	.home__contact {
+		.wrap {
+			.row {
+				margin-bottom:50px;
+				&:last-child {
+					margin-bottom:0px;
+				}
+				.item {
+					float:none;
+					width:100%; /* 480 1020 */
+					margin-right:0; /* 60 1020 */
+					margin-bottom:50px;
+					&:last-child {
+						margin-bottom:0px;
+					}
+				}
+			}
+			.item__wrap {
+				position:relative;
+				span {
+					position:absolute;
+					left:0px;
+					bottom:8px;
+					color:#5d5e5e;
+					font-size:21px;
+					.roboto;
+					font-weight:100;
+					.transition(0.2s);
+					z-index:0;
+					.scale(@ratio:1);
+					
+				}
+				&:before, &:after{
+					content:'';
+					display:block;
+					width:0px;
+					height:1px;
+					bottom:0px;
+					position:absolute;
+					left:50%;
+					background:rgba(255,255,255,0.7);
+					.transition(0.2s);
+					z-index:2;
+				}
+				&:after {
+					left:auto;
+					right:50%;
+				}
+				&.act {
+					span {
+						bottom:40px;
+						.scale(@ratio:0.8);					
+					}
+					&:before, &:after {
+						width:50%;
+					}
+				}
+			}
+			.soc {
+				a {
+					display:inline-block;
+					margin:0px 15px;
+					svg {
+						fill:#505050;
+						.scale(@ratio:1);
+						.transition(0.2s);
+					}
+					&:hover {
+						svg {
+							.scale(@ratio:1.1);
+							fill:rgba(255,255,255,0.7);
+						}					
+					}
+				}
+			}
+		}
+	}
+}
 
 .reveal .slides > section, .reveal .slides > section > section {
 	padding:0px;
@@ -457,12 +557,22 @@ body {
 	&.has-dark-background {
 		
 	}
-	/* color */
-	.white {
-		color:#FFF;
-	}
-	.grey {
-		color:#a8a8a8;
+}
+
+.device {
+	.reveal {
+		.title {
+			font-size:60px; 
+			line-height:70px;
+			margin-bottom:49px;
+		}	 
+		.p {
+			font-size:24px;
+			line-height:36px;
+		}
+		&.has-dark-background {
+			
+		}
 	}
 }
 

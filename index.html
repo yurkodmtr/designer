@@ -17,6 +17,7 @@
 
 <script src="js/reveal.js"></script>
 
+<script src="js/jquery.fittext.js"></script>
 <script src="js/myscript.js"></script>
 
 <script src="js/owl.carousel.js"></script>
@@ -73,6 +74,22 @@
 				<a href="#/home__about">About</a>
 				<a href="#/home__contact">Contact</a>
 			</div>
+
+			<div class="burger">
+				<i></i>
+			</div>
+
+			<div class="nav_device">
+				<div>
+					<ul>						
+						<li><a href="#/home__projects">Projects</a></li>
+						<li><a href="#/home__about">About</a></li>
+						<li><a href="#/home__contact">Contact</a></li>
+					</ul>
+					
+				</div>
+			</div>
+
 		</div>
 
 		<!-- home__about__img -->
@@ -82,118 +99,123 @@
 			<section>
 
 				<section class="home__welcome" id="home__welcome" data-background-color="#FFF">
-					<div class="title">
-						Our designes are created for perfect consumer experience
-					</div>
-					<div class="p">
-						Web/UI Design, Apps, Graphics, Branding, Illustration
-					</div>					
+					<div class="wrap">
+						<div class="title">
+							Our designes are created for perfect consumer experience
+						</div>
+						<div class="p">
+							Web/UI Design, Apps, Graphics, Branding, Illustration
+						</div>
+					</div>										
 				</section>
 
 				<section class="home__projects" id="home__projects" data-background-color="#f3f3f3">
-					<div id="owl-demo" class="owl-carousel owl-theme">
+					<div class="wrap">
+						<div id="owl-demo" class="owl-carousel owl-theme">
  
-					<div class="item">
-						<div class="slide">
-							<div class="center_point"></div>
-							<span class="count">
-								01
-							</span>
-							<div class="table">
-								<div class="table-row">
-									<div class="table-cell">
-										<img src="images/slide_1.png" alt="">
+							<div class="item">
+								<div class="slide">
+									<div class="center_point"></div>
+									<span class="count">
+										01
+									</span>
+									<div class="table">
+										<div class="table-row">
+											<div class="table-cell">
+												<img src="images/slide_1.png" alt="">
+											</div>
+											<div class="table-cell">&nbsp;</div>
+											<div class="table-cell">
+												<a href="#">
+													<div class="title">
+														Lenovo
+													</div>
+													<div class="p">
+														Design for official web-store (Eastern Europe/Asia)
+													</div>
+													<div class="arrow">
+														<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															 width="63px" height="9.262px" viewBox="0 0 63 9.262" enable-background="new 0 0 63 9.262" xml:space="preserve">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M59,6v3h1V8h1V7h1V6h1V3h-1V2h-1V1h-1V0h-1v3H0v3H59z"/>
+														</svg>
+													</div>
+												</a>										
+											</div>
+										</div>								
 									</div>
-									<div class="table-cell">&nbsp;</div>
-									<div class="table-cell">
-										<a href="#">
-											<div class="title">
-												Severin
-											</div>
-											<div class="p">
-												Website design for the architectural company
-											</div>
-											<div class="arrow">
-												<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="63px" height="9.262px" viewBox="0 0 63 9.262" enable-background="new 0 0 63 9.262" xml:space="preserve">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M59,6v3h1V8h1V7h1V6h1V3h-1V2h-1V1h-1V0h-1v3H0v3H59z"/>
-												</svg>
-											</div>
-										</a>										
-									</div>
-								</div>								
+								</div> 
 							</div>
-						</div> 
-					</div>
-					<div class="item">
-						<div class="slide">
-							<span class="count">
-								02
-							</span>
-							<div class="table">
-								<div class="table-row">
-									<div class="table-cell">
-										<img src="images/slide_2.png" alt="">
+							<div class="item">
+								<div class="slide">
+									<span class="count">
+										02
+									</span>
+									<div class="table">
+										<div class="table-row">
+											<div class="table-cell">
+												<img src="images/slide_2.png" alt="">
+											</div>
+											<div class="table-cell">&nbsp;</div>
+											<div class="table-cell">
+												<a href="#">
+													<div class="title">
+														Severin
+													</div>
+													<div class="p">
+														Website design for the architectural company
+													</div>
+													<div class="arrow">
+														<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															 width="63px" height="9.262px" viewBox="0 0 63 9.262" enable-background="new 0 0 63 9.262" xml:space="preserve">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M59,6v3h1V8h1V7h1V6h1V3h-1V2h-1V1h-1V0h-1v3H0v3H59z"/>
+														</svg>
+													</div>
+												</a>
+											</div>
+										</div>								
 									</div>
-									<div class="table-cell">&nbsp;</div>
-									<div class="table-cell">
-										<a href="#">
-											<div class="title">
-												Severin
-											</div>
-											<div class="p">
-												Website design for the architectural company
-											</div>
-											<div class="arrow">
-												<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="63px" height="9.262px" viewBox="0 0 63 9.262" enable-background="new 0 0 63 9.262" xml:space="preserve">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M59,6v3h1V8h1V7h1V6h1V3h-1V2h-1V1h-1V0h-1v3H0v3H59z"/>
-												</svg>
-											</div>
-										</a>
-									</div>
-								</div>								
+								</div> 
 							</div>
-						</div> 
-					</div>
-					<div class="item">
-						<div class="slide">
-							<span class="count">
-								03
-							</span>
-							<div class="table">
-								<div class="table-row">
-									<div class="table-cell">
-										<img src="images/slide_3.png" alt="">
+							<div class="item">
+								<div class="slide">
+									<span class="count">
+										03
+									</span>
+									<div class="table">
+										<div class="table-row">
+											<div class="table-cell">
+												<img src="images/slide_3.png" alt="">
+											</div>
+											<div class="table-cell">&nbsp;</div>
+											<div class="table-cell">
+												<a href="#">
+													<div class="title">
+														Unisex
+													</div>
+													<div class="p">
+														Website design for erotic fashion geek show
+													</div>
+													<div class="arrow">
+														<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+															 width="63px" height="9.262px" viewBox="0 0 63 9.262" enable-background="new 0 0 63 9.262" xml:space="preserve">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M59,6v3h1V8h1V7h1V6h1V3h-1V2h-1V1h-1V0h-1v3H0v3H59z"/>
+														</svg>
+													</div>
+												</a>
+											</div>
+										</div>								
 									</div>
-									<div class="table-cell">&nbsp;</div>
-									<div class="table-cell">
-										<a href="#">
-											<div class="title">
-												Severin
-											</div>
-											<div class="p">
-												Website design for the architectural company
-											</div>
-											<div class="arrow">
-												<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="63px" height="9.262px" viewBox="0 0 63 9.262" enable-background="new 0 0 63 9.262" xml:space="preserve">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M59,6v3h1V8h1V7h1V6h1V3h-1V2h-1V1h-1V0h-1v3H0v3H59z"/>
-												</svg>
-											</div>
-										</a>
-									</div>
-								</div>								
+								</div> 
 							</div>
-						</div> 
+						 
+						</div>
 					</div>
-					 
-					</div>
+					
 				</section>				
 
 				<section class="home__about" id="home__about" > 
 					<div class="wrap">
-						<div class="qqq clearfix">
+						<div class="about_text clearfix">
 							<div class="title">
 								I design websites and apps
 							</div>
@@ -201,8 +223,7 @@
 								And I do it because I love it.
 								I'm that guy who will translate your ideas into fresh designs. Jump in with both feet and enjoy!
 							</div>
-						</div>	
-
+						</div>
 					</div>
 							
 				</section>
@@ -212,7 +233,7 @@
 
 						<div class="title">Drop me a line!</div>
 						<div class="p">
-							Ready to start a project or really curious about the process?<br/>
+							Ready to start a project or really curious about the process?<span></span>
 							Let’s talk about your idea.
 						</div>
 
@@ -340,8 +361,11 @@
 			overview: false,
 			hideAddressBar: true,
 			transition: 'slide',
-			width:'1920',
-			height:'1080'
+			width:'100%',
+			height:'100%',
+			margin: 0,
+		    minScale: 1,
+		    maxScale: 1
 	 	});
 
  		var owl = $('#owl-demo');
@@ -350,7 +374,7 @@
 	      	slideSpeed : 2000,
 	      	paginationSpeed : 2000,
 	      	singleItem:true,
-	      	mouseDrag: false,
+	      	mouseDrag: true,
 	      	addClassActive : false,
 	      	rewindNav : false	 
 	  	});

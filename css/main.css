@@ -368,12 +368,6 @@ body * {
   text-align: center;
   position: relative;
 }
-.reveal .home__projects .owl-item .slide .center_point {
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  left: 50%;
-}
 .reveal .home__projects .owl-item .slide .count {
   font-size: 600px;
   line-height: 600px;

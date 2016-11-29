@@ -109,7 +109,16 @@ var hideNav = function(){
 }
 
 var pageScroll = function(){
-
+	if ( $('.slides > section > section.present').hasClass('home__projects') ) {
+		Reveal.configure({ 
+      	  	width: "100%",
+		    height: "100%",
+		    margin: 0,
+		    minScale: 1,
+		    maxScale: 1		 
+	  	});
+	  	return false;
+	}
 	var windowHeight = $(window).height();
 	var contentHeight = $('.slides > section > section.present .wrap').height();
 

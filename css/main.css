@@ -350,6 +350,13 @@ body * {
 .reveal .home__projects .owl-buttons .owl-next {
   float: right;
 }
+.reveal .home__projects .owl-pagination {
+  position: fixed;
+  left: 0px;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
 .reveal .home__projects .owl-pagination .owl-page {
   display: inline-block;
   margin: 0px 50px;
@@ -381,6 +388,9 @@ body * {
   -o-transition: all 2s ease-out;
   transition: all 2s ease-out;
   left: 200px;
+}
+.reveal .home__projects .owl-item .slide .content_phone {
+  display: none;
 }
 .reveal .home__projects .owl-item .slide .table {
   display: table;
@@ -472,6 +482,124 @@ body * {
   -ms-transform: translate3d(-50px, 0, 0);
   -o-transform: translate3d(-50px, 0, 0);
   transform: translate3d(-50px, 0, 0);
+}
+.size_2 .reveal .home__projects .owl-item .slide .count,
+.size_3 .reveal .home__projects .owl-item .slide .count {
+  font-size: 500px;
+  line-height: 500px;
+  height: 500px;
+}
+.size_2 .reveal .home__projects .owl-item .slide .table,
+.size_3 .reveal .home__projects .owl-item .slide .table {
+  width: 900px;
+  height: 500px;
+}
+.size_2 .reveal .home__projects .owl-item .slide .table-cell:first-child,
+.size_3 .reveal .home__projects .owl-item .slide .table-cell:first-child {
+  width: 380px;
+}
+.size_2 .reveal .home__projects .owl-item .slide .table-cell:first-child img,
+.size_3 .reveal .home__projects .owl-item .slide .table-cell:first-child img {
+  width: 380px;
+}
+.size_2 .reveal .home__projects .owl-item .slide .table-cell:last-child,
+.size_3 .reveal .home__projects .owl-item .slide .table-cell:last-child {
+  text-align: left;
+  width: 290px;
+}
+.size_4 .reveal .home__projects .owl-item .slide .count {
+  font-size: 400px;
+  line-height: 400px;
+  height: 400px;
+}
+.size_4 .reveal .home__projects .owl-item .slide .table {
+  width: 700px;
+  height: 400px;
+}
+.size_4 .reveal .home__projects .owl-item .slide .table-cell:first-child {
+  width: 280px;
+}
+.size_4 .reveal .home__projects .owl-item .slide .table-cell:first-child img {
+  width: 280px;
+}
+.size_4 .reveal .home__projects .owl-item .slide .table-cell:last-child {
+  text-align: left;
+  width: 190px;
+}
+.size_5 .reveal .home__projects .owl-item .slide .count,
+.size_6 .reveal .home__projects .owl-item .slide .count,
+.size_7 .reveal .home__projects .owl-item .slide .count {
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+}
+.size_5 .reveal .home__projects .owl-item .slide .table,
+.size_6 .reveal .home__projects .owl-item .slide .table,
+.size_7 .reveal .home__projects .owl-item .slide .table {
+  display: none;
+}
+.size_5 .reveal .home__projects .owl-item .slide .content_phone,
+.size_6 .reveal .home__projects .owl-item .slide .content_phone,
+.size_7 .reveal .home__projects .owl-item .slide .content_phone {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.size_5 .reveal .home__projects .owl-item .slide .content_phone figure,
+.size_6 .reveal .home__projects .owl-item .slide .content_phone figure,
+.size_7 .reveal .home__projects .owl-item .slide .content_phone figure {
+  width: 70%;
+  margin: 0 auto 20px auto;
+}
+.size_5 .reveal .home__projects .owl-item .slide .content_phone figure img,
+.size_6 .reveal .home__projects .owl-item .slide .content_phone figure img,
+.size_7 .reveal .home__projects .owl-item .slide .content_phone figure img {
+  max-width: 100%;
+}
+.size_5 .reveal .home__projects .owl-item .slide .content_phone .p,
+.size_6 .reveal .home__projects .owl-item .slide .content_phone .p,
+.size_7 .reveal .home__projects .owl-item .slide .content_phone .p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.size_5 .reveal .home__projects .owl-item .slide .count {
+  font-size: 500px;
+  line-height: 500px;
+  height: 500px;
+}
+.size_5 .reveal .home__projects .owl-item .slide .content_phone {
+  padding-top: 40px;
+  max-width: 70%;
+  margin: 0 auto;
+  min-height: 500px;
+}
+.size_5 .reveal .home__projects .owl-item .slide .content_phone figure {
+  width: 60%;
+}
+.size_6 .reveal .home__projects .owl-item .slide .count {
+  font-size: 400px;
+  line-height: 400px;
+  height: 400px;
+}
+.size_6 .reveal .home__projects .owl-item .slide .content_phone {
+  padding-top: 0px;
+  max-width: 70%;
+  margin: 0 auto;
+  min-height: 500px;
+}
+.size_6 .reveal .home__projects .owl-item .slide .content_phone figure {
+  width: 75%;
+}
+.size_7 .reveal .home__projects .owl-item .slide .count {
+  font-size: 150px;
+  line-height: 150px;
+  height: 150px;
 }
 .reveal .home__projects .owl-item.active .slide .count {
   left: 0px;

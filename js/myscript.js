@@ -30,18 +30,40 @@ var sliderParallaxOnload = function(){
 
 var breakpoint = function(){
 	var w = $(window).width();
-
-	if ( w > 1680) {
-		$('body').addClass('pc_large').removeClass('pc tablet phone');
-		hideNav();
-	} else if ( w <=1680 && w >1200) {
-		$('body').addClass('pc').removeClass('pc_large tablet phone');
-		hideNav();
-	} else if ( w <=1200 && w >=768) {
-		$('body').addClass('tablet').removeClass('pc pc_large phone');
-	} else if ( w <=768) {
-		$('body').addClass('phone').removeClass('pc tablet pc_large');
+	var removeBodyClass = function(){
+		for ( var i=1;i<=7;i++ ) {
+			$('body').removeClass('size_'+i);
+		}
 	}
+	if ( w > 1920) { 
+		hideNav();
+	} else if ( w <= 1920 && w > 1680 ) {
+		removeBodyClass();
+		$('body').addClass('size_1');
+		hideNav();
+	} else if ( w <= 1680 && w > 1450 ) {
+		removeBodyClass();
+		hideNav();
+		$('body').addClass('size_2');
+	} else if ( w <= 1450 && w > 1200 ) {
+		removeBodyClass();
+		hideNav();
+		$('body').addClass('size_3');
+	} else if ( w <= 1200 && w > 960 ) {
+		removeBodyClass();
+		hideNav();
+		$('body').addClass('size_4');
+	} else if ( w <= 960 && w > 768 ) {
+		removeBodyClass();
+		$('body').addClass('size_5');
+	} else if ( w <= 768 && w > 320 ) {
+		removeBodyClass();
+		$('body').addClass('size_6');
+	} else if ( w <= 320 ) {
+		removeBodyClass();
+		$('body').addClass('size_7');
+	}
+
 }
 
 var contactText = function(){
@@ -86,6 +108,31 @@ var hideNav = function(){
 	$('.header .logo').removeClass('act');
 }
 
+var pageScroll = function(){
+
+	var windowHeight = $(window).height();
+	var contentHeight = $('.slides > section > section.present .wrap').height();
+
+	if (contentHeight > windowHeight) {
+
+		Reveal.configure({ 
+	      	width: 960,
+		    height: 700,
+		    margin: 0.1,
+		    minScale: 0.2,
+		    maxScale: 1.5		 
+	  	});
+	} else {
+		Reveal.configure({ 
+      	  	width: "100%",
+		    height: "100%",
+		    margin: 0,
+		    minScale: 1,
+		    maxScale: 1		 
+	  	});
+	}
+}
+
 $(document).ready(function(){
 	$('.owl-item').removeClass('active');
 });
@@ -101,13 +148,17 @@ $(window).load(function(){
 	breakpoint();
 	contactText();
 
+	pageScroll();
+
 	Reveal.addEventListener( 'slidechanged', function( event ) {
 		slideChange();
 		sliderParallaxOnload();
+		pageScroll();
 	});
 	
 });
 
 $(window).resize(function(){
 	breakpoint();
+	pageScroll();
 });

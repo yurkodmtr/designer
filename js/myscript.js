@@ -142,6 +142,42 @@ var pageScroll = function(){
 	}
 }
 
+var projectLoader = function(){
+	if ( $('#home__projects').hasClass("present") ) {
+		$('.project_loader').show();
+		setTimeout(function(){
+			$('.project_loader').fadeOut();
+		}, 1800);
+	}
+}
+
+var projectPagenator = function(){
+	var count = $('.owl-pagination div').length;
+
+	for (var i=1;i<=count;i++) {
+		$('.project_paginator').append('<div></div>');
+	}
+	$('.project_paginator div:nth-child(1)').addClass('active');
+
+	$(document).on('click', '.project_paginator div' , function() {		
+		$(this).addClass('active').siblings().removeClass('active');
+		var i = $(this).index();
+		var owl = $(".owl-carousel").data('owlCarousel');
+		owl.goTo(i);
+	});
+
+}
+
+var projectPagenatorView = function(){
+	console.log('asdf');
+	if ( $('#home__projects').hasClass("present") ) {
+		$('.project_paginator').addClass('act');
+	} else {
+		$('.project_paginator').removeClass('act');
+	}
+}
+
+
 $(document).ready(function(){
 	$('.owl-item').removeClass('active');
 });
@@ -156,18 +192,22 @@ $(window).load(function(){
 	sliderParallaxOnload();
 	breakpoint();
 	contactText();
+	projectPagenator();
+	projectPagenatorView();
 
-	pageScroll();
+	//pageScroll();
 
 	Reveal.addEventListener( 'slidechanged', function( event ) {
 		slideChange();
 		sliderParallaxOnload();
-		pageScroll();
+		projectPagenatorView();
+		//pageScroll();
 	});
 	
 });
 
 $(window).resize(function(){
 	breakpoint();
-	pageScroll();
+	projectLoader();
+	//pageScroll();
 });

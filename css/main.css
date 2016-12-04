@@ -351,15 +351,59 @@ body * {
   float: right;
 }
 .reveal .home__projects .owl-pagination {
+  display: none;
+}
+.size_5 .reveal .home__projects .owl-buttons .owl-prev,
+.size_6 .reveal .home__projects .owl-buttons .owl-prev,
+.size_7 .reveal .home__projects .owl-buttons .owl-prev {
+  display: none;
+}
+.size_5 .reveal .home__projects .owl-buttons .owl-next,
+.size_6 .reveal .home__projects .owl-buttons .owl-next,
+.size_7 .reveal .home__projects .owl-buttons .owl-next {
+  display: none;
+}
+.reveal .project_loader {
+  display: none;
   position: fixed;
   left: 0px;
-  bottom: 50px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #f3f3f3;
+  z-index: 9;
+}
+.reveal .project_loader img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: px;
+  height: px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.reveal .project_paginator {
+  position: fixed;
+  left: 0px;
+  bottom: -30px;
   width: 100%;
   text-align: center;
+  z-index: 2;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
-.reveal .home__projects .owl-pagination .owl-page {
+.reveal .project_paginator.act {
+  bottom: 30px;
+}
+.reveal .project_paginator div {
+  cursor: pointer;
   display: inline-block;
-  margin: 0px 50px;
+  margin: 0px 30px;
   width: 7px;
   height: 7px;
   background: #dadada;
@@ -368,7 +412,7 @@ body * {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.reveal .home__projects .owl-pagination .owl-page.active {
+.reveal .project_paginator div.active {
   background: #151723;
 }
 .reveal .home__projects .owl-item .slide {
@@ -580,12 +624,12 @@ body * {
   min-height: 500px;
 }
 .size_5 .reveal .home__projects .owl-item .slide .content_phone figure {
-  width: 60%;
+  width: 400px;
 }
 .size_6 .reveal .home__projects .owl-item .slide .count {
-  font-size: 400px;
-  line-height: 400px;
-  height: 400px;
+  font-size: 350px;
+  line-height: 350px;
+  height: 350px;
 }
 .size_6 .reveal .home__projects .owl-item .slide .content_phone {
   padding-top: 0px;
@@ -594,12 +638,12 @@ body * {
   min-height: 500px;
 }
 .size_6 .reveal .home__projects .owl-item .slide .content_phone figure {
-  width: 75%;
+  width: 100%;
 }
 .size_7 .reveal .home__projects .owl-item .slide .count {
-  font-size: 150px;
-  line-height: 150px;
-  height: 150px;
+  font-size: 250px;
+  line-height: 250px;
+  height: 250px;
 }
 .reveal .home__projects .owl-item.active .slide .count {
   left: 0px;
@@ -824,6 +868,9 @@ body * {
   transform: scale(1.1);
   fill: rgba(255, 255, 255, 0.7);
 }
+.size_5 .home__contact .wrap {
+  max-width: 600px;
+}
 .size_5 .home__contact .wrap .row {
   margin-bottom: 30px;
 }
@@ -842,6 +889,13 @@ body * {
 }
 .size_5 .home__contact .wrap .row .item:last-child {
   margin-bottom: 0px;
+}
+.size_7 .home__contact .wrap form,
+.size_6 .home__contact .wrap form {
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .size_7 .home__contact .wrap .title span,
 .size_6 .home__contact .wrap .title span {

@@ -295,6 +295,9 @@ body * {
   font-size: 40px;
 }
 /* home__projects */
+.reveal .home__projects .wrap {
+  padding: 0px 50px;
+}
 .reveal .home__projects .owl-buttons {
   position: absolute;
   left: 0px;
@@ -352,6 +355,11 @@ body * {
 }
 .reveal .home__projects .owl-pagination {
   display: none;
+}
+.size_5 .reveal .home__projects .wrap,
+.size_6 .reveal .home__projects .wrap,
+.size_7 .reveal .home__projects .wrap {
+  padding: 0px 15px;
 }
 .size_5 .reveal .home__projects .owl-buttons .owl-prev,
 .size_6 .reveal .home__projects .owl-buttons .owl-prev,
@@ -689,13 +697,17 @@ body * {
 .reveal .home__about__img {
   display: none;
   position: fixed;
-  left: 40%;
+  left: 50%;
   max-width: 900px;
   /* 713 1920 */
 
   width: auto;
   max-height: 100%;
   bottom: 0px;
+}
+.size_3 .reveal .home__about .wrap .about_text {
+  text-align: left;
+  width: 40%;
 }
 .size_4 .reveal .home__about .wrap .about_text,
 .size_5 .reveal .home__about .wrap .about_text {
@@ -850,23 +862,13 @@ body * {
 }
 .home__contact .wrap .soc a svg {
   fill: #505050;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 .home__contact .wrap .soc a:hover svg {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  fill: rgba(255, 255, 255, 0.7);
+  fill: #FFF;
 }
 .size_5 .home__contact .wrap {
   max-width: 600px;
@@ -934,7 +936,7 @@ body * {
 }
 .reveal .slides > section,
 .reveal .slides > section > section {
-  padding: 0px;
+  padding: 30px 0px 0px 0px;
 }
 .reveal .title {
   font-size: 90px;

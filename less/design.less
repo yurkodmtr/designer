@@ -277,6 +277,9 @@ body {
 /* home__projects */
 .reveal {
 	.home__projects {
+		.wrap {
+			padding:0px 50px;
+		}
 		.owl-buttons {
 			position:absolute;
 			left:0px;
@@ -320,6 +323,9 @@ body {
 .size_5, .size_6, .size_7 {
 	.reveal {
 		.home__projects {
+			.wrap {
+				padding:0px 15px;
+			}
 			.owl-buttons {				
 				.owl-prev {
 					display:none;
@@ -708,11 +714,23 @@ body {
 		&__img {
 			display:none;
 			position:fixed;
-			left:40%;
+			left:50%;
 			max-width:900px; /* 713 1920 */
 			width:auto;
 			max-height:100%;
 			bottom:0px;
+		}
+	}
+}
+.size_3  {
+	.reveal {
+		.home__about {
+			.wrap {
+				.about_text {
+					text-align:left;
+					width:40%;
+				}			
+			}			
 		}
 	}
 }
@@ -862,13 +880,11 @@ body {
 				margin:0px 15px;
 				svg {
 					fill:#505050;
-					.scale(@ratio:1);
 					.transition(0.2s);
 				}
 				&:hover {
 					svg {
-						.scale(@ratio:1.1);
-						fill:rgba(255,255,255,0.7);
+						fill:#FFF;
 					}					
 				}
 			}
@@ -941,7 +957,7 @@ body {
 
 
 .reveal .slides > section, .reveal .slides > section > section {
-	padding:0px;
+	padding:30px 0px 0px 0px;
 }
 
 .reveal {

@@ -378,8 +378,8 @@ input[type="submit"] {
 .size_7 .reveal .home__projects .owl-buttons .owl-next {
   display: none;
 }
-.reveal .project_loader {
-  display: none;
+.reveal .loader {
+  display: block;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -388,7 +388,7 @@ input[type="submit"] {
   background: #f3f3f3;
   z-index: 9;
 }
-.reveal .project_loader img {
+.reveal .loader img {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -721,12 +721,13 @@ input[type="submit"] {
 }
 .size_6 .reveal .home__about .wrap .about_text,
 .size_7 .reveal .home__about .wrap .about_text {
-  text-align: left;
-  width: 70%;
+  margin-left: 0px;
+  text-align: center;
+  width: 100%;
 }
 .size_6 .reveal .home__about__img,
 .size_7 .reveal .home__about__img {
-  left: 30%;
+  display: none!important;
 }
 /* home__contact */
 .home__contact .wrap {

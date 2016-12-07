@@ -23,7 +23,8 @@ var sliderParallaxOnload = function(){
 		var owl = $("#owl-demo").data('owlCarousel');
 
 		owl.reinit({ 
-	      	addClassActive : true		 
+	      	addClassActive : true,
+	      	singleItem:true	 
 	  	});
 	}
 }
@@ -144,9 +145,9 @@ var pageScroll = function(){
 
 var projectLoader = function(){
 	if ( $('#home__projects').hasClass("present") ) {
-		$('.project_loader').show();
+		$('.loader').show();
 		setTimeout(function(){
-			$('.project_loader').fadeOut();
+			$('.loader').fadeOut();
 		}, 1800);
 	}
 }
@@ -176,9 +177,13 @@ var projectPagenatorView = function(){
 	}
 }
 
+var loader = function(){
+	$('.loader').fadeOut();
+}
 
 $(document).ready(function(){
 	$('.owl-item').removeClass('active');
+	breakpoint();
 });
 
 $(window).load(function(){
@@ -189,7 +194,7 @@ $(window).load(function(){
 	slideChange();
 	navFix();
 	sliderParallaxOnload();
-	breakpoint();
+	
 	contactText();
 	projectPagenator();
 	projectPagenatorView();
@@ -202,6 +207,7 @@ $(window).load(function(){
 		projectPagenatorView();
 		//pageScroll();
 	});
+	loader();
 	
 });
 

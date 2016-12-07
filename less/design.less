@@ -346,8 +346,8 @@ input[type="submit"] {
 	}
 }
 .reveal {
-	.project_loader {
-		display:none;
+	.loader {
+		display:block;
 		position:fixed;
 		left:0px;
 		top:0px;
@@ -757,12 +757,13 @@ input[type="submit"] {
 		.home__about {
 			.wrap {
 				.about_text {
-					text-align:left;
-					width:70%;
+					margin-left:0px;
+					text-align:center;
+					width:100%;
 				}			
 			}
 			&__img {
-				left:30%;
+				display:none!important;
 			}			
 		}
 	}

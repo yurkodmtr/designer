@@ -169,7 +169,6 @@ var projectPagenator = function(){
 }
 
 var projectPagenatorView = function(){
-	console.log('asdf');
 	if ( $('#home__projects').hasClass("present") ) {
 		$('.project_paginator').addClass('act');
 	} else {

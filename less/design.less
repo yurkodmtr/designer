@@ -933,6 +933,7 @@ input[type="submit"] {
 				margin-right:auto;
 			}
 			.title {
+				margin-bottom:20px;
 				span {
 					display:none;
 				}
@@ -947,9 +948,9 @@ input[type="submit"] {
 				}
 				.item {
 					float:none;
-					width:100%; /* 480 1020 */
-					margin-right:0; /* 60 1020 */
-					margin-bottom:30px;
+					width:100%;
+					margin-right:0;
+					margin-bottom:20px;
 					&:last-child {
 						margin-bottom:0px;
 					}
@@ -961,6 +962,22 @@ input[type="submit"] {
 					svg {
 						width:40px;
 					}
+				}
+			}
+			form {
+				.input, .textarea {
+					line-height:24px;
+					font-size:16px;
+					padding:5px 0px;
+				}
+				.submit {
+					height:40px;
+				}
+			}
+			.item__wrap {
+				span {
+					bottom:8px;
+					font-size:16px;					
 				}
 			}
 		}

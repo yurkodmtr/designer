@@ -911,6 +911,10 @@ input[type="submit"] {
   margin-left: auto;
   margin-right: auto;
 }
+.size_7 .home__contact .wrap .title,
+.size_6 .home__contact .wrap .title {
+  margin-bottom: 20px;
+}
 .size_7 .home__contact .wrap .title span,
 .size_6 .home__contact .wrap .title span {
   display: none;
@@ -931,12 +935,8 @@ input[type="submit"] {
 .size_6 .home__contact .wrap .row .item {
   float: none;
   width: 100%;
-  /* 480 1020 */
-
   margin-right: 0;
-  /* 60 1020 */
-
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .size_7 .home__contact .wrap .row .item:last-child,
 .size_6 .home__contact .wrap .row .item:last-child {
@@ -949,6 +949,23 @@ input[type="submit"] {
 .size_7 .home__contact .wrap .soc a svg,
 .size_6 .home__contact .wrap .soc a svg {
   width: 40px;
+}
+.size_7 .home__contact .wrap form .input,
+.size_6 .home__contact .wrap form .input,
+.size_7 .home__contact .wrap form .textarea,
+.size_6 .home__contact .wrap form .textarea {
+  line-height: 24px;
+  font-size: 16px;
+  padding: 5px 0px;
+}
+.size_7 .home__contact .wrap form .submit,
+.size_6 .home__contact .wrap form .submit {
+  height: 40px;
+}
+.size_7 .home__contact .wrap .item__wrap span,
+.size_6 .home__contact .wrap .item__wrap span {
+  bottom: 8px;
+  font-size: 16px;
 }
 .reveal .slides > section,
 .reveal .slides > section > section {

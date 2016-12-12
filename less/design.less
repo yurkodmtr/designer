@@ -1079,8 +1079,45 @@ input[type="submit"] {
 	}
 }
 
+/* unisex */
+.unisex {
+	padding:0px;
+	margin:0px;
+	height:100%;
+}
 
-
+/* unisex__welcome */
+.unisex {
+	&__welcome {
+		position: relative;
+		text-align: center;
+		background-position: center center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-image: url(../images/unisex_welcome.jpg);
+		.table {
+			position:absolute;
+			left:0px;
+			top:0px; 
+			width:100%;
+			height:100%;
+			display:table;
+			&-cell {
+				display:table-cell;
+				vertical-align:middle;				
+			}
+		}
+		.title {
+			color:#FFF;
+		}
+		.p {
+			color:#FFF;
+		}
+	}
+}
 
 
 .clearfix:after {

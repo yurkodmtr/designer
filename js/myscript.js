@@ -109,40 +109,6 @@ var hideNav = function(){
 	$('.header .logo').removeClass('act');
 }
 
-var pageScroll = function(){
-	if ( $('.slides > section > section.present').hasClass('home__projects') ) {
-		Reveal.configure({ 
-      	  	width: "100%",
-		    height: "100%",
-		    margin: 0,
-		    minScale: 1,
-		    maxScale: 1		 
-	  	});
-	  	return false;
-	}
-	var windowHeight = $(window).height();
-	var contentHeight = $('.slides > section > section.present .wrap').height();
-
-	if (contentHeight > windowHeight) {
-
-		Reveal.configure({ 
-	      	width: 960,
-		    height: 700,
-		    margin: 0.1,
-		    minScale: 0.2,
-		    maxScale: 1.5		 
-	  	});
-	} else {
-		Reveal.configure({ 
-      	  	width: "100%",
-		    height: "100%",
-		    margin: 0,
-		    minScale: 1,
-		    maxScale: 1		 
-	  	});
-	}
-}
-
 var projectLoader = function(){
 	if ( $('#home__projects').hasClass("present") ) {
 		$('.loader').show();
@@ -181,6 +147,28 @@ var loader = function(){
 	$('.loader').fadeOut();
 }
 
+/* --------------- unisex --------------- */
+/* welcome */
+var unisexWelcome = function(){
+	if ($('.unisex__welcome').length < 1) {
+        return false;
+    }
+
+    var windowHeight = $(window).height();
+    $('.unisex__welcome').css('height', 'auto');
+    var welcomeHeight = $('.unisex__welcome .center').outerHeight();
+
+    console.log(windowHeight);
+    console.log(welcomeHeight);
+
+    if (windowHeight > welcomeHeight) {
+        $('.unisex__welcome').css('height', windowHeight + 'px');
+    } else {
+        $('.unisex__welcome').css('height', 'auto');
+    }
+}
+
+
 $(document).ready(function(){
 	$('.owl-item').removeClass('active');
 	breakpoint();
@@ -198,15 +186,16 @@ $(window).load(function(){
 	contactText();
 	projectPagenator();
 	projectPagenatorView();
+	if ( typeof Reveal !== 'undefined') {
+		Reveal.addEventListener( 'slidechanged', function( event ) {
+			slideChange();
+			sliderParallaxOnload();
+			projectPagenatorView();
+		});
+	}
+	
 
-	//pageScroll();
-
-	Reveal.addEventListener( 'slidechanged', function( event ) {
-		slideChange();
-		sliderParallaxOnload();
-		projectPagenatorView();
-		//pageScroll();
-	});
+	unisexWelcome();
 	loader();
 	
 });
@@ -214,5 +203,5 @@ $(window).load(function(){
 $(window).resize(function(){
 	breakpoint();
 	projectLoader();
-	//pageScroll();
+	unisexWelcome();
 });

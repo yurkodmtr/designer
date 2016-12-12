@@ -1033,6 +1033,42 @@ input[type="submit"] {
   font-size: 16px;
   line-height: 24px;
 }
+/* unisex */
+.unisex {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+/* unisex__welcome */
+.unisex__welcome {
+  position: relative;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(../images/unisex_welcome.jpg);
+}
+.unisex__welcome .table {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.unisex__welcome .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.unisex__welcome .title {
+  color: #FFF;
+}
+.unisex__welcome .p {
+  color: #FFF;
+}
 .clearfix:after {
   content: '';
   display: block;

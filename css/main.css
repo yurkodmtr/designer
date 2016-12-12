@@ -1039,10 +1039,14 @@ input[type="submit"] {
   margin: 0px;
   height: 100%;
 }
+.unisex .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /* unisex__welcome */
 .unisex__welcome {
   position: relative;
-  text-align: center;
+  text-align: left;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -1052,7 +1056,7 @@ input[type="submit"] {
   background-image: url(../images/unisex_welcome.jpg);
 }
 .unisex__welcome .table {
-  position: absolute;
+  position: relative;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -1065,9 +1069,80 @@ input[type="submit"] {
 }
 .unisex__welcome .title {
   color: #FFF;
+  max-width: 570px;
 }
 .unisex__welcome .p {
   color: #FFF;
+  max-width: 570px;
+}
+.size_5 .unisex__welcome,
+.size_6 .unisex__welcome,
+.size_7 .unisex__welcome {
+  text-align: center;
+}
+.size_5 .unisex__welcome .title,
+.size_6 .unisex__welcome .title,
+.size_7 .unisex__welcome .title {
+  max-width: 100%;
+}
+.size_5 .unisex__welcome .p,
+.size_6 .unisex__welcome .p,
+.size_7 .unisex__welcome .p {
+  max-width: 100%;
+}
+/* unisex task */
+.unisex__task {
+  position: relative;
+  text-align: left;
+}
+.unisex__task .table {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.unisex__task .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.unisex__task .title {
+  max-width: 570px;
+}
+.unisex__task .p {
+  max-width: 570px;
+}
+.size_5 .unisex__task,
+.size_6 .unisex__task,
+.size_7 .unisex__task {
+  padding-top: 175px;
+}
+.size_5 .unisex__task .table,
+.size_6 .unisex__task .table,
+.size_7 .unisex__task .table {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.size_5 .unisex__task .table-cell,
+.size_6 .unisex__task .table-cell,
+.size_7 .unisex__task .table-cell {
+  display: block;
+  vertical-align: middle;
+}
+.size_5 .unisex__task .title,
+.size_6 .unisex__task .title,
+.size_7 .unisex__task .title {
+  max-width: 100%;
+}
+.size_5 .unisex__task .p,
+.size_6 .unisex__task .p,
+.size_7 .unisex__task .p {
+  max-width: 100%;
 }
 .clearfix:after {
   content: '';

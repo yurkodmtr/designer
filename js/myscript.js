@@ -150,22 +150,22 @@ var loader = function(){
 /* --------------- unisex --------------- */
 /* welcome */
 var unisexWelcome = function(){
-	if ($('.unisex__welcome').length < 1) {
+	if ($('.height__block').length < 1) {
         return false;
     }
 
     var windowHeight = $(window).height();
-    $('.unisex__welcome').css('height', 'auto');
-    var welcomeHeight = $('.unisex__welcome .center').outerHeight();
+    $('.height__block').each(function(){
+    	$(this).css('height', 'auto');
+	    var contentHeight = $(this).find('.wrap').outerHeight();
 
-    console.log(windowHeight);
-    console.log(welcomeHeight);
-
-    if (windowHeight > welcomeHeight) {
-        $('.unisex__welcome').css('height', windowHeight + 'px');
-    } else {
-        $('.unisex__welcome').css('height', 'auto');
-    }
+	    if (windowHeight > contentHeight) {
+	        $(this).css('height', windowHeight + 'px');
+	    } else {
+	        $(this).css('height', contentHeight+'px');
+	    }
+    });
+    
 }
 
 

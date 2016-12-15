@@ -134,6 +134,26 @@ input[type="submit"] {
 	}
 }
 
+.has-dark-background {
+	.header {
+		.logo {
+			svg {
+				fill:#a8a8a8;
+			}
+		}
+		.nav {
+			a {
+				color:#a8a8a8;
+			}
+		}
+		.burger {
+			i, &:before, &:after {
+				background:#a8a8a8;
+			}
+		}
+	}
+}
+
 /* burger */
 .reveal {
 	.burger{
@@ -1079,6 +1099,53 @@ input[type="submit"] {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* unisex */
 .unisex {
 	padding:0px;
@@ -1087,6 +1154,33 @@ input[type="submit"] {
 	.wrap {
 		max-width: 1200px;
 		margin:0 auto;
+	}
+	.height__block {
+		.table {
+			position:relative;
+			left:0px;
+			top:0px; 
+			width:100%;
+			height:100%;
+			display:table;
+			&-cell {
+				display:table-cell;
+				vertical-align:middle;		
+				.wrap {
+					padding:150px 0px;
+				}						
+			}
+		}
+		&__top {
+			.table{
+				&-cell {
+					vertical-align:top;
+				}
+			}
+		}
+	}
+	.block {
+		padding:150px 0px;
 	}
 }
 
@@ -1102,18 +1196,7 @@ input[type="submit"] {
 		-o-background-size: cover;
 		background-size: cover;
 		background-image: url(../images/unisex_welcome.jpg);
-		.table {
-			position:relative;
-			left:0px;
-			top:0px; 
-			width:100%;
-			height:100%;
-			display:table;
-			&-cell {
-				display:table-cell;
-				vertical-align:middle;								
-			}
-		}
+		
 		.title {
 			color:#FFF;
 			max-width:570px;
@@ -1143,18 +1226,6 @@ input[type="submit"] {
 	&__task {
 		position: relative;
 		text-align: left;
-		.table {
-			position:relative;
-			left:0px;
-			top:0px; 
-			width:100%;
-			height:100%;
-			display:table;
-			&-cell {
-				display:table-cell;
-				vertical-align:middle;								
-			}
-		}
 		.title {
 			max-width:570px;
 		}
@@ -1167,18 +1238,6 @@ input[type="submit"] {
 	.unisex {
 		&__task {
 			padding-top:175px;
-			.table {
-				position:relative;
-				left:0px;
-				top:0px; 
-				width:100%;
-				height:100%;
-				display:block;
-				&-cell {
-					display:block;
-					vertical-align:middle;								
-				}
-			}
 			.title {
 				max-width:100%;
 			}
@@ -1186,6 +1245,42 @@ input[type="submit"] {
 				max-width:100%;
 			}
 		}
+	}
+}
+
+/* unisex concept */
+.unisex {
+	&__concept {
+		background:#e9e9eb;
+	}
+}
+
+/* unisex logo */
+.unisex {
+	&__logo {
+		background:#151723;
+		.title {
+			color:#FFF;
+		}
+		.p {
+			color:#a8a8a8;
+		}
+	}
+}
+
+/* unisex result */
+.unisex {
+	&__result {
+		position: relative;
+		background-position: center center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-image: url(../images/unisex_result.jpg);
+
+		text-align:left;
 	}
 }
 

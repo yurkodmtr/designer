@@ -167,11 +167,33 @@ var unisexWelcome = function(){
     });
     
 }
+/* dark_bg */
+var darkBg = function(){
+	var currentScroll = $(window).scrollTop();
+	var headerHeight = $('.header').height()
+	$('.dark_bg').each(function(){
+
+		var q = $(this).offset().top-headerHeight;
+
+		var qHeight = $(this).outerHeight();
+
+		if (currentScroll >= q && currentScroll < q+qHeight) {
+			$('body').addClass('has-dark-background');
+			return false;
+		} else {
+			$('body').removeClass('has-dark-background');
+		}
+	});
+
+	
+	
+}
 
 
 $(document).ready(function(){
 	$('.owl-item').removeClass('active');
 	breakpoint();
+	darkBg();
 });
 
 $(window).load(function(){
@@ -204,4 +226,8 @@ $(window).resize(function(){
 	breakpoint();
 	projectLoader();
 	unisexWelcome();
+});
+
+$(window).scroll(function(){
+	darkBg();
 });

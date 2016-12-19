@@ -1121,6 +1121,15 @@ input[type="submit"] {
 .unisex__task .p {
   max-width: 570px;
 }
+.unisex__task img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: block;
+  max-width: 50%;
+  max-height: 100%;
+  top: 50%;
+}
 .size_5 .unisex__task,
 .size_6 .unisex__task,
 .size_7 .unisex__task {
@@ -1161,6 +1170,44 @@ input[type="submit"] {
   background-size: cover;
   background-image: url(../images/unisex_result.jpg);
   text-align: left;
+}
+.unisex__result .title,
+.unisex__result .p {
+  max-width: 570px;
+}
+/* unisex__pager */
+.unisex__pager {
+  background: #f3f3f3;
+}
+.unisex__pager .table-cell {
+  text-align: center;
+}
+.unisex__pager .table-cell:first-child {
+  border-right: 1px solid #d5d5d9;
+}
+.unisex__pager .table-cell a {
+  text-decoration: none;
+  display: block;
+}
+.unisex__pager .table-cell a > div {
+  position: relative;
+  color: #FFF;
+  font-size: 450px;
+  line-height: 450px;
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+  font-family: 'Oswald', sans-serif;
+}
+.unisex__pager .table-cell a > div .title {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 450px;
+  width: 450px;
+  line-height: 450px;
+  margin: auto;
+  text-align: center;
 }
 .clearfix:after {
   content: '';

@@ -183,10 +183,13 @@ var darkBg = function(){
 		} else {
 			$('body').removeClass('has-dark-background');
 		}
-	});
+	});	
+}
 
-	
-	
+var unisexTask = function(){
+	var height = $('.unisex__task img').height()/2;
+	console.log(height);
+	$('.unisex__task img').css('margin-top',-height + 'px');
 }
 
 
@@ -194,6 +197,7 @@ $(document).ready(function(){
 	$('.owl-item').removeClass('active');
 	breakpoint();
 	darkBg();
+	
 });
 
 $(window).load(function(){
@@ -218,6 +222,7 @@ $(window).load(function(){
 	
 
 	unisexWelcome();
+	unisexTask();
 	loader();
 	
 });
@@ -226,6 +231,7 @@ $(window).resize(function(){
 	breakpoint();
 	projectLoader();
 	unisexWelcome();
+	unisexTask();
 });
 
 $(window).scroll(function(){

@@ -1232,6 +1232,15 @@ input[type="submit"] {
 		.p {
 			max-width:570px;
 		}
+		img {
+			position:absolute;
+			right:0px;
+			top:0px;
+			display:block;
+			max-width:50%;
+			max-height:100%;
+			top:50%;
+		}
 	}
 }
 .size_5, .size_6, .size_7 {
@@ -1281,6 +1290,47 @@ input[type="submit"] {
 		background-image: url(../images/unisex_result.jpg);
 
 		text-align:left;
+		.title, .p {
+			max-width:570px;
+		}
+	}
+}
+
+/* unisex__pager */
+.unisex {
+	&__pager {
+		background:#f3f3f3;
+		.table-cell {
+			text-align:center;
+			&:first-child {
+				border-right:1px solid #d5d5d9;
+			}
+			a {
+				text-decoration:none;				
+				display:block;
+				& > div {
+					position:relative;					
+					color:#FFF;
+					font-size:450px;
+					line-height:450px;
+					display:inline-block;
+					width:450px;
+					height:450px;
+					.oswald;
+					.title {
+						position:absolute;
+						left:0px;
+						top:0px;
+						height:450px;	
+						width:450px;
+						line-height:450px;
+						text-align:center;
+						margin:auto;
+						text-align:center;				
+					}
+				}
+			}
+		}
 	}
 }
 

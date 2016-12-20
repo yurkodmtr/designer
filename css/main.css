@@ -1051,29 +1051,15 @@ input[type="submit"] {
   height: 100%;
 }
 .unisex .wrap {
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
 }
-.unisex .height__block .table {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  display: table;
+.size_4 .text__wrap,
+.size_5 .text__wrap {
+  margin: 0px 75px;
 }
-.unisex .height__block .table-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-.unisex .height__block .table-cell .wrap {
-  padding: 150px 0px;
-}
-.unisex .height__block__top .table-cell {
-  vertical-align: top;
-}
-.unisex .block {
-  padding: 150px 0px;
+.size_6 .text__wrap {
+  margin: 0px 25px;
 }
 /* unisex__welcome */
 .unisex__welcome {
@@ -1086,6 +1072,21 @@ input[type="submit"] {
   -o-background-size: cover;
   background-size: cover;
   background-image: url(../images/unisex_welcome.jpg);
+}
+.unisex__welcome .table {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.unisex__welcome .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.unisex__welcome .table-cell .wrap {
+  padding: 150px 15px;
 }
 .unisex__welcome .title {
   color: #FFF;
@@ -1114,26 +1115,45 @@ input[type="submit"] {
 .unisex__task {
   position: relative;
   text-align: left;
+  padding: 350px 0px;
 }
 .unisex__task .title {
   max-width: 570px;
+  position: relative;
+  z-index: 1;
 }
 .unisex__task .p {
   max-width: 570px;
+  position: relative;
+  z-index: 1;
 }
-.unisex__task img {
+.unisex__task__large {
   position: absolute;
   right: 0px;
   top: 0px;
   display: block;
-  max-width: 50%;
+  max-width: 830px;
+  width: 50%;
   max-height: 100%;
   top: 50%;
+  z-index: 0;
+}
+.unisex__task__small {
+  display: none;
+  text-align: center;
+  padding-top: 20px;
+}
+.unisex__task__small img {
+  max-width: 100%;
+  display: inline-block;
+}
+.size_4 .unisex__task {
+  padding: 150px 0px;
 }
 .size_5 .unisex__task,
 .size_6 .unisex__task,
 .size_7 .unisex__task {
-  padding-top: 175px;
+  padding: 175px 0px 40px 0px;
 }
 .size_5 .unisex__task .title,
 .size_6 .unisex__task .title,
@@ -1145,13 +1165,29 @@ input[type="submit"] {
 .size_7 .unisex__task .p {
   max-width: 100%;
 }
+.size_5 .unisex__task__large,
+.size_6 .unisex__task__large,
+.size_7 .unisex__task__large {
+  display: none;
+}
+.size_5 .unisex__task__small,
+.size_6 .unisex__task__small,
+.size_7 .unisex__task__small {
+  display: block;
+}
+.size_6 .unisex__task,
+.size_7 .unisex__task {
+  padding: 100px 0px 40px 0px;
+}
 /* unisex concept */
 .unisex__concept {
   background: #e9e9eb;
+  padding: 150px 0px;
 }
 /* unisex logo */
 .unisex__logo {
   background: #151723;
+  padding: 150px 0px;
 }
 .unisex__logo .title {
   color: #FFF;
@@ -1162,52 +1198,147 @@ input[type="submit"] {
 /* unisex result */
 .unisex__result {
   position: relative;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-image: url(../images/unisex_result.jpg);
   text-align: left;
+  padding: 150px 0px 0px 0px;
 }
 .unisex__result .title,
 .unisex__result .p {
   max-width: 570px;
+  position: relative;
+  z-index: 1;
+}
+.unisex__result img {
+  width: 100%;
+}
+.unisex__result__large {
+  display: block;
+  margin-top: -300px;
+  position: relative;
+  z-index: 0;
+}
+.unisex__result__small {
+  display: none;
+}
+.size_5 .unisex__result,
+.size_6 .unisex__result,
+.size_7 .unisex__result {
+  padding: 100px 0px 0px 0px;
+}
+.size_5 .unisex__result__large,
+.size_6 .unisex__result__large,
+.size_7 .unisex__result__large {
+  display: none;
+}
+.size_5 .unisex__result__small,
+.size_6 .unisex__result__small,
+.size_7 .unisex__result__small {
+  display: block;
 }
 /* unisex__pager */
 .unisex__pager {
   background: #f3f3f3;
+  position: relative;
 }
-.unisex__pager .table-cell {
-  text-align: center;
-}
-.unisex__pager .table-cell:first-child {
-  border-right: 1px solid #d5d5d9;
-}
-.unisex__pager .table-cell a {
+.unisex__pager a {
   text-decoration: none;
   display: block;
-}
-.unisex__pager .table-cell a > div {
-  position: relative;
-  color: #FFF;
-  font-size: 450px;
-  line-height: 450px;
-  display: inline-block;
-  width: 450px;
-  height: 450px;
-  font-family: 'Oswald', sans-serif;
-}
-.unisex__pager .table-cell a > div .title {
   position: absolute;
   left: 0px;
   top: 0px;
-  height: 450px;
-  width: 450px;
-  line-height: 450px;
+  height: 100%;
+  width: 50%;
+}
+.unisex__pager a div {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #FFF;
+  margin-bottom: 0px!important;
+  line-height: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+.unisex__pager a div .title {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   margin: auto;
   text-align: center;
+}
+.unisex__pager a:last-child {
+  left: auto;
+  right: 0px;
+  border-left: 1px solid #d5d5d9;
+}
+/* uni */
+.uni {
+  margin: 0px;
+  padding: 0px;
+}
+/* uni__pager */
+.uni__pager {
+  background: #f3f3f3;
+  position: relative;
+}
+.uni__pager a {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+  text-decoration: none;
+  text-align: center;
+}
+.uni__pager a:last-child {
+  left: auto;
+  right: 0px;
+  border-left: 1px solid #d5d5d9;
+}
+.uni__pager a .count {
+  font-size: 450px;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+}
+.uni__pager a .title {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0px!important;
+}
+.size_5 .uni__pager a,
+.size_6 .uni__pager a,
+.size_7 .uni__pager a {
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 50%;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+}
+.size_5 .uni__pager a:last-child,
+.size_6 .uni__pager a:last-child,
+.size_7 .uni__pager a:last-child {
+  left: auto;
+  right: auto;
+  top: 50%;
+  border-left: none;
+  border-top: 1px solid #d5d5d9;
+}
+.size_5 .uni__pager a .count,
+.size_6 .uni__pager a .count,
+.size_7 .uni__pager a .count {
+  font-size: 300px;
 }
 .clearfix:after {
   content: '';

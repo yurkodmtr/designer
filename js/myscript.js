@@ -150,21 +150,21 @@ var loader = function(){
 /* --------------- unisex --------------- */
 /* welcome */
 var unisexWelcome = function(){
-	if ($('.height__block').length < 1) {
+	if ($('.unisex__welcome').length < 1) {
         return false;
     }
 
     var windowHeight = $(window).height();
-    $('.height__block').each(function(){
-    	$(this).css('height', 'auto');
-	    var contentHeight = $(this).find('.wrap').outerHeight();
 
-	    if (windowHeight > contentHeight) {
-	        $(this).css('height', windowHeight + 'px');
-	    } else {
-	        $(this).css('height', contentHeight+'px');
-	    }
-    });
+	$('.unisex__welcome').css('height', 'auto');
+    var contentHeight = $('.unisex__welcome').find('.wrap').outerHeight();
+
+    if (windowHeight > contentHeight) {
+        $('.unisex__welcome').css('height', windowHeight + 'px');
+    } else {
+        $('.unisex__welcome').css('height', contentHeight+'px');
+    }
+
     
 }
 /* dark_bg */
@@ -187,9 +187,8 @@ var darkBg = function(){
 }
 
 var unisexTask = function(){
-	var height = $('.unisex__task img').height()/2;
-	console.log(height);
-	$('.unisex__task img').css('margin-top',-height + 'px');
+	var height = $('.unisex__task__large').height()/2;
+	$('.unisex__task__large').css('margin-top',-height + 'px');
 }
 
 
@@ -228,9 +227,10 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-	breakpoint();
-	projectLoader();
 	unisexWelcome();
+	breakpoint(); 
+	projectLoader();
+	
 	unisexTask();
 });
 

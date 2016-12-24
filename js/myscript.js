@@ -191,6 +191,11 @@ var unisexTask = function(){
 	$('.unisex__task__large').css('margin-top',-height + 'px');
 }
 
+var unisesPager = function(){
+	var height = $('.unisex__pager a').outerHeight();
+	$('.unisex__pager article').css('height',height+'px');
+}
+
 
 $(document).ready(function(){
 	$('.owl-item').removeClass('active');
@@ -219,7 +224,7 @@ $(window).load(function(){
 		});
 	}
 	
-
+	unisesPager();
 	unisexWelcome();
 	unisexTask();
 	loader();
@@ -230,7 +235,7 @@ $(window).resize(function(){
 	unisexWelcome();
 	breakpoint(); 
 	projectLoader();
-	
+	unisesPager();
 	unisexTask();
 });
 

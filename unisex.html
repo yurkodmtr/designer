@@ -16,6 +16,9 @@
 
 <script src="js/myscript.js"></script>
 
+<link rel="stylesheet" href="css/owl.carousel.css" />
+<script src="js/owl.carousel.js"></script>
+
 
 
 <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -137,8 +140,44 @@
 						</div>
 						<div class="p">
 							My idea was to show the full range of the artists' abilities, that's why I decided to focus on their photos and chose the color scheme that matches the night-club atmosphere (dark background with bright colorful flashes)
-						</div>
+						</div>						
 					</div>
+					<div id="owl-concept" class="owl-carousel owl-theme">
+ 
+						<div class="item active">
+							<div class="act">
+								<img src="images/unisex_concept_slide.png" alt="">
+							</div>								
+						</div>
+						<div class="item">
+							<div>
+								<img src="images/unisex_concept_slide.png" alt="">
+							</div>	
+						</div>
+						<div class="item">
+							<div>
+								<img src="images/unisex_concept_slide.png" alt="">
+							</div>	
+						</div>
+					 
+					</div>
+
+					<script>
+						var owl = $('#owl-concept');
+					 		owl.owlCarousel({ 
+						      	navigation : true, // Show next and prev buttons
+						      	slideSpeed : 2000,
+						      	paginationSpeed : 2000,
+						      	singleItem:true,
+						      	mouseDrag: true,
+						      	addClassActive : false,
+						      	rewindNav : false,
+						      	addClassActive : true,
+						      	afterMove : function (elem) {
+									$('#owl-concept .item div').removeClass('act');
+								}
+						  	});
+					</script>
 				</div>
 			</div>
 
@@ -150,6 +189,40 @@
 						</div>
 						<div class="p">
 							There was a request to make a logo design. The client’s vision was that i should be just a text with an interesting font. Surprisingly, the first and only version was accepted
+						</div>
+						<div class="item__list clearfix">
+							<div class="item">
+								<span>
+									<img src="images/unisex_logo_1.png">
+								</span>								
+								<div>
+									Сhoose the font
+								</div>
+							</div>
+							<div class="item">
+								<span>
+									<img src="images/unisex_logo_2.png">
+								</span>								
+								<div>
+									Аdd some discoball<br/>reflection
+								</div>
+							</div>
+							<div class="item">
+								<span>
+									<img src="images/unisex_logo_3.png">
+								</span>								
+								<div>
+									Мake a slight reversal<br/>of the text
+								</div>
+							</div>
+							<div class="item">
+								<span>
+									<img src="images/unisex_logo_4.png">
+								</span>							
+								<div>
+									Logo is ready
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -170,24 +243,28 @@
 				<img src="images/unisex_result_small.jpg" alt="" class="unisex__result__small">		
 			</div>
 
-			<!--<div class="uni__pager">
+			<div class="unisex__pager clearfix"> 
 				<a href="#">
-					<div class="count">
+					<span>
 						01
-					</div>
-					<div class="title">
-						Prev work
-					</div>
+					</span>
+					<article>
+						<div>
+							Prev work
+						</div>
+					</article>
 				</a>
 				<a href="#">
-					<div class="count">
+					<span>
 						03
-					</div>
-					<div class="title">
-						Next work
-					</div>
+					</span>
+					<article>
+						<div>
+							Next work
+						</div>						
+					</article>
 				</a>
-			</div>-->
+			</div>
 		</div>
 
 	</div>
